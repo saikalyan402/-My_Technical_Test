@@ -1,0 +1,23 @@
+{
+    "reader": {
+        "connector": {
+            "type": "file",
+            "config": {
+                "path": "../tests/input.txt"
+            }
+        }
+    },
+    "transform": [
+        {
+            "type": "TO_UPPER"
+        }
+    ],
+    "writer": {
+        "connector": {
+            "type": "file",
+            "config": {
+                "path": "../tests"
+            }
+        }
+    }
+}
